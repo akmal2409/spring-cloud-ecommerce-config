@@ -1,5 +1,5 @@
 test:
-  name: test2
+  name: test4
 
 management:
   endpoints:
