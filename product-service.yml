@@ -1,8 +1,9 @@
 test:
-  name: test4
+  name: test6
 
 management:
   endpoints:
     web:
       exposure:
         include: "*"
+
