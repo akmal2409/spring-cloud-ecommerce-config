@@ -1,4 +1,17 @@
 spring:
+  security:
+    oauth2:
+      client:
+        provider:
+          keycloak:
+            issuer-uri: http://localhost:8081/auth/realms/ecommerce-microservice
+        registration:
+          spring-cloud-gateway-client:
+            client-id: spring-cloud-gateway-client
+            client-secret: da18544f-b84b-43b7-a1dc-b17ff0858e50
+            provider: keycloak
+            authorization-grant-type: authorization_code
+            redirect-uri: http://localhost:8080/login/oauth2/code/spring-cloud-gateway-client
   cloud:
     loadbalancer:
       ribbon:
