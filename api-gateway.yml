@@ -1,10 +1,25 @@
+spring:
+  cloud:
+    loadbalancer:
+      ribbon:
+        enabled: false
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+      routes[0]:
+        id: product-service
+        uri: lb://product-service
+        predicates[0]: Path=/api/product
+      routes[1]:
+        id: order-service
+        uri: lb://order-service
+        predicates[0]: Path=/api/order
+
 eureka:
-  client:
-    register-with-eureka: true
-    fetch-registry: true
   instance:
-    instance-id: ${spring.application.name}:${random.uuid}
-    prefer-ip-address: true
+    instance-id: ${spring.application.name}-${random.uuid}
 
 management:
   endpoints:
