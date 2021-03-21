@@ -31,6 +31,10 @@ spring:
         id: order-service
         uri: lb://order-service
         predicates[0]: Path=/api/order
+      routes[2]:
+        id: inventory-service
+        uri: lb://inventory-service
+        predicates[0]: Path=/api/inventory
 
 eureka:
   instance:
