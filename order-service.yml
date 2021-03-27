@@ -13,6 +13,10 @@ spring:
   rabbitmq:
     host: localhost
     port: 5672
+  cloud:
+    loadbalancer:
+      ribbon:
+        enabled: false
 
 eureka:
   client:
