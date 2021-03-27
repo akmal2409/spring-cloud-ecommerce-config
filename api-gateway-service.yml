@@ -7,7 +7,7 @@ spring:
       client:
         provider:
           keycloak:
-            issuer-uri: http://localhost:8081/auth/realms/ecommerce-microservice
+            issuer-uri: http://localhost:8081/auth/realms/talci-cloud
         registration:
           spring-cloud-gateway-client:
             provider: keycloak

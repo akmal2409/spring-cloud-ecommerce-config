@@ -14,7 +14,7 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: http://localhost:8081/auth/realms/ecommerce-microservice
+          issuer-uri: http://localhost:8081/auth/realms/talci-cloud
   rabbitmq:
     host: localhost
     port: 5672
