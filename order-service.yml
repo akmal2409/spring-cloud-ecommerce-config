@@ -22,6 +22,9 @@ spring:
     loadbalancer:
       ribbon:
         enabled: false
+    stream:
+      bindings:
+        notificationEventSupplier-out-0.destination: notification-events
 
 
 eureka:
