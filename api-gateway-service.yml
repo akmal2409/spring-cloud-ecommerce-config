@@ -15,7 +15,7 @@ spring:
           spring-cloud-gateway-client:
             provider: keycloak
             authorization-grant-type: authorization_code
-            redirect-uri: http://localhost:8080/login/oauth2/code/spring-cloud-gateway-client
+            redirect-uri: http://localhost:8080/login/oauth2/code/keycloak
   cloud:
     loadbalancer:
       ribbon:
