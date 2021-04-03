@@ -25,7 +25,7 @@ spring:
     stream:
       bindings:
         notificationEventSupplier-out-0.destination: notification-events
-
+      source: notificationEventSupplier
 
 eureka:
   client:
