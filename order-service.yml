@@ -22,11 +22,11 @@ spring:
     loadbalancer:
       ribbon:
         enabled: false
-#    stream:
-#      bindings:
-#        notificationEventSupplier-out-0:
-#          destination: notification-events
-#      source: notificationEventSupplier
+    stream:
+      bindings:
+        notificationEventSupplier:
+          destination: notification-events
+      source: notificationEventSupplier
 
 eureka:
   client:
