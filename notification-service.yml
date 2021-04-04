@@ -2,8 +2,9 @@ spring:
   cloud:
     stream:
       bindings:
-        notificationEventSupplier:
+        notificationEventSupplier-in-0:
           destination: notification-events
+          group: notification-service
 
 
 eureka:

@@ -24,8 +24,9 @@ spring:
         enabled: false
     stream:
       bindings:
-        notificationEventSupplier:
+        notificationEventSupplier-out-0:
           destination: notification-events
+          group: order-service
       source: notificationEventSupplier
 
 eureka:
